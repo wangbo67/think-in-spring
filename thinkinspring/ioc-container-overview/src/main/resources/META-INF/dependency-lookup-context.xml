@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="user" class="ioc.overview.beans.User">
+        <property name="id" value="1" />
+        <property name="name" value="dog" />
+        <property name="age" value="7" />
+    </bean>
+
+    <bean id="vipUser" class="ioc.overview.beans.VipUser" parent="user" primary="true">
+        <property name="ipNum" value="111" />
+    </bean>
+
+    <!--实现bean的延迟查找，字段 targetBeanName 关联需要延迟查找的 bean-->
+    <bean id="objectFactory" class="org.springframework.beans.factory.config.ObjectFactoryCreatingFactoryBean">
+        <property name="targetBeanName" value="user" />
+    </bean>
+
+    <bean id="selfObjectFactory" class="ioc.overview.dependency.lookup.SelfObjectFactory">
+    </bean>
+</beans>

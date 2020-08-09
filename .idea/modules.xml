@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/thinkinspring/ioc-container-overview/ioc-container-overview.iml" filepath="$PROJECT_DIR$/thinkinspring/ioc-container-overview/ioc-container-overview.iml" />
       <module fileurl="file://$PROJECT_DIR$/javabeans/javabeans.iml" filepath="$PROJECT_DIR$/javabeans/javabeans.iml" />
       <module fileurl="file://$PROJECT_DIR$/think-in-spring.iml" filepath="$PROJECT_DIR$/think-in-spring.iml" />
       <module fileurl="file://$PROJECT_DIR$/thinkinspring/thinkinspring.iml" filepath="$PROJECT_DIR$/thinkinspring/thinkinspring.iml" />
