@@ -8,11 +8,13 @@
         <outputRelativeToContentRoot value="true" />
         <module name="javabeans" />
         <module name="ioc-container-overview" />
+        <module name="spring-bean" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="ioc-container-overview" target="1.5" />
       <module name="javabeans" target="8" />
+      <module name="spring-bean" target="1.5" />
       <module name="thinkinspring" target="1.5" />
     </bytecodeTargetLevel>
   </component>
