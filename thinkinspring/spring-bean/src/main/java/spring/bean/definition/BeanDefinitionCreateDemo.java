@@ -23,6 +23,7 @@ public class BeanDefinitionCreateDemo {
         // 获取 BeanDefinition 实例
         BeanDefinition beanDefinition = builder.getBeanDefinition();
         // BeanDefinition 并非 bean 的终态，可自定义修改
+        System.out.println(beanDefinition);
 
         // 2.通过 AbstractBeanDefinition 及派生类
         AbstractBeanDefinition definition = new GenericBeanDefinition();
@@ -32,6 +33,6 @@ public class BeanDefinitionCreateDemo {
                 .add("name", "snake")
                 .add("age", 11);
         definition.setPropertyValues(propertyValues);
-
+        System.out.println(definition);
     }
 }
