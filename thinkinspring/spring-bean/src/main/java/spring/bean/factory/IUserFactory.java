@@ -21,4 +21,6 @@ public interface IUserFactory {
     }
 
     void initUserFactory();
+
+    void doDestroy();
 }
