@@ -1,5 +1,7 @@
 package ioc.overview.beans;
 
+import javax.annotation.PostConstruct;
+
 /**
  * @program: think-in-spring
  * @description: 用户示例
@@ -42,5 +44,9 @@ public class User {
                 ", name='" + name + '\'' +
                 ", age=" + age +
                 '}';
+    }
+
+    public static User creatUser() {
+        return new User();
     }
 }
