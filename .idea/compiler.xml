@@ -9,10 +9,12 @@
         <module name="javabeans" />
         <module name="spring-bean" />
         <module name="spring-mvc" />
+        <module name="bean-lifecycle" />
         <module name="ioc-container-overview" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="bean-lifecycle" target="1.5" />
       <module name="ioc-container-overview" target="1.5" />
       <module name="javabeans" target="8" />
       <module name="spring-bean" target="8" />
