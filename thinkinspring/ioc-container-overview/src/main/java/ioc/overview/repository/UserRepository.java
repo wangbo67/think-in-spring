@@ -14,9 +14,12 @@ import java.util.Collection;
  * @created: 2020-08-09 00:21
  **/
 public class UserRepository {
-    private Collection<User> users; // 普通的 bean
-    private BeanFactory beanFactory; // 内部的非 bean 对象（依赖）
+    private Collection<User> users; // 依赖注入 ---> 自定义 bean
+
+    private BeanFactory beanFactory; // 依赖注入 ---> 内部的非 bean 对象（內建依赖）
+
     private ObjectFactory<User> userObjectFactory;
+
     private ObjectFactory<ApplicationContext> applicationContextObjectFactory;
 
     public Collection<User> getUsers() {

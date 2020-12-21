@@ -1,7 +1,6 @@
-package ioc.overview.dependency.lookup;
+package ioc.overview.beans;
 
 
-import ioc.overview.beans.User;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.ObjectFactory;
 

@@ -4,7 +4,10 @@
        xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
     <!-- 通过导入复用 dependency-lookup-context.xml -->
-    <import resource="dependency-lookup-context.xml" />
-    <bean id="userRepository" class="ioc.overview.repository.UserRepository" autowire="byType">
+    <import resource="dependency-lookup-context.xml"/>
+
+    <bean id="userRepository" class="ioc.overview.repository.UserRepository"
+          autowire="byType"> <!--Auto-Wiring 方式-->
     </bean>
+
 </beans>

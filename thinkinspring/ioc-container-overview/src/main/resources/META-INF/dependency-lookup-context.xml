@@ -19,6 +19,6 @@
         <property name="targetBeanName" value="user" />
     </bean>
 
-    <bean id="selfObjectFactory" class="ioc.overview.dependency.lookup.SelfObjectFactory">
+    <bean id="selfObjectFactory" class="ioc.overview.beans.SelfObjectFactory">
     </bean>
 </beans>
